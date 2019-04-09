@@ -31,3 +31,116 @@
     transform: rotate(360deg);
   }
 }
+.grid-wrapper{
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "left right";
+  text-align: left;
+ }
+.grid-col-1 {
+  grid-area: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 1rem;
+}.grid-col-2 {
+  grid-area: right;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin: 1rem;
+  
+}
+.form-group{
+  margin: 1rem;
+}
+label{
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+.form-control{
+  display: block;
+  width: 75%;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(16, 18, 19, 0.15);
+}
+.btn{    
+  display: inline-block;
+  font-weight: 450;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+.btn-primary{
+  color: #fff;
+  background-color: #02d898;
+  border-color: #5fc9a0;
+}
+body{
+  font-family: "Avenir next","Avenir",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #373a3c;
+  background-color: #fff;
+}
+.splash-bang{
+  text-align: left;
+  
+  padding: 4rem 2rem;
+  margin-bottom: 2rem;
+  background-color: #eceeef;
+  border-radius: .3rem;
+}
+.loading-overlay{
+  background: #FFFFFF;
+  opacity: .6;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.loader{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border: 16px solid #ebedef;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.visible{
+  display:inline;
+}
+.hidden{
+  display:none;
+}
